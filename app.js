@@ -85,7 +85,7 @@ function selectAnswer(e){
 }
 function showScore(){
   resetState();
-  questionElement.innerHTML = 'You won ${score}';
+  questionElement.innerHTML = "You won ${score}";
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = 'block';
 }
