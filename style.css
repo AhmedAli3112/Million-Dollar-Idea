@@ -9,7 +9,7 @@ body{
   background-color: #f5f5f5;
 }
 .app{
-  background: white;
+  background: rgb(255, 255, 255);
   width: 90%;
   max-width: 600px;
   margin: 100px auto 0;
@@ -34,8 +34,8 @@ body{
 }
 
 .btn{
-  background: rgb(0, 133, 122);
-  color: rgb(255, 255, 255);
+  background: rgb(0, 255, 234);
+  color: rgb(0, 0, 0);
   font-weight: 500;
   width: 100%;
   border: 1px solid #222;
@@ -47,14 +47,14 @@ body{
   transition: all 0.3s;
 }
 .btn:hover:not([disabled]){
-  background: #00ff15;
+  background: #4800ff;
   color: white
 }
 .btn:disabled{
   cursor: no-drop;
 }
 #next-btn{
-  background: rosybrown;
+  background: rgb(0, 0, 0);
   color: white;
   font-weight: 500;
   width: 150px;
@@ -66,7 +66,7 @@ body{
   display: none;
 }
 .correct{
-  background:green;
+  background:rgb(0, 255, 0);
 }
 .incorrect{
   background:red;
