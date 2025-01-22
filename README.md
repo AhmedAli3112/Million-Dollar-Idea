@@ -1,7 +1,7 @@
-Screenshot/Logo: A screenshot of your app or a logo.
+![image](https://github.com/user-attachments/assets/db758693-4a6d-4477-bf7d-4058c061af4c)
 
 
-Your game's name: "Who Wants to be a millionaire"
+ "Who Wants to be a millionaire"
 Based on the live tv show, its a simple fun trivia game.
 
 Getting started: https://ahmedali3112.github.io/Million-Dollar-Idea/
