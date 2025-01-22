@@ -197,7 +197,7 @@ function selectAnswer(e){
 
   function showScore() {
     resetState();
-    questionElement.innerHTML = `Congratulations! You've Won $${score * 10000}!`;
+    questionElement.innerHTML = `Congratulations! You've Won $${score * 10000}! The rest has been taxed`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
   }
@@ -212,13 +212,15 @@ function handleNextButton(){
 }
 
 
-nextButton.addEventListener("click",()=>{
-  if(nextButton.innerHTML === "Try Again"){
+nextButton.addEventListener("click", () => {
+  if (nextButton.innerHTML === "Try Again") {
     startQuiz();
-  }else {
+  } else if (nextButton.innerHTML === "Play Again") {
+    startQuiz();  
+  } else {
     handleNextButton();
   }
-})
+});
 function startQuiz(){
   currentQuestionIndex = 0;
   score = 0;
@@ -227,4 +229,11 @@ function startQuiz(){
   showQuestion();
 }
 startQuiz();
+
+document.getElementById("startmenu").addEventListener("click",function(){
+  document.querySelector(".app").classList.toggle('hidden');
+  this.style.display = "none"
+});
+
+
 
